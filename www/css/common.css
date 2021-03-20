@@ -1,0 +1,35 @@
+body {
+    background-color: #84b1e0;
+}
+div.navbar {
+    background-color: #84b1e0; /* Specifying the background color as a shade of blue */
+    position: fixed; /* Upon scrolling the page, the navbar stays at a fixed position */
+    width: 100%; /* The entire div takes up the whole screen (horizontally) */
+    top: 85%; /* The div starts in the bottom after leaving 85% of the width above it */
+    left: 0; /* The div starts right at the left border */
+}
+div#mainbody {
+    max-height: 85%; /* The rest of the body shall only stay till the navbar starts */
+    overflow-y: scroll; /* If the div extends further, then the users shall scroll down */
+}
+table.navbar {
+    width: 100%; /* The table takes up the entire width of the container div */
+}
+tr.navbar {
+    width: 33%; /* Each table cell takes up one-third of the screen */
+}
+img.navbar {
+    width: 15%;
+    margin: 5%; /* Adding space around the image on all sides */
+    padding: 2%; /* Adding space between the border and the image on all sides */
+    transition: border-bottom 0.1s; /* When the image is hovered or clicked, there will be a transition */
+}
+img.navbar-current, img.navbar:hover, img.navbar:active {
+    border-bottom: 3px solid white; /* Adding a border for the icons for the current and selected page */
+}
+h1 {
+    font-size: 200%;
+    margin: 0.5%;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
